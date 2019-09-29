@@ -58,71 +58,28 @@ I use this plug-in almost everyday! Therefore, whenever I am not developing I am
 - Please use [aponxi/issues page](https://github.com/aponxi/sublime-better-coffeescript/issues) to make requests or report bugs.
 - Please make _pull requests_ to the respective branch (`master` branch is for Sublime Text 3, `st2` branch is for Sublime Text 2.)
 
-# Installation
 
-## via Package Control
+## Installation
 
-> This is the recommended installation method.
+### By Package Control
 
-If you have [Sublime Package Control](https://sublime.wbond.net/), you know what to do. If not, well: it's a package manager for Sublime Text 3. Installation guide can be [found here](https://sublime.wbond.net/installation).  After installing the package manager:
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `BetterCoffeescript` and press <kbd>Enter</kbd>
 
-* Open the Command Pallete (`ctrl+shift+P` or `cmd+shift+P`).
-* Type "Install Package" and hit return.
-* Type "Better CoffeeScript" and hit return.
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
-## via Source Control
-
-> If you plan to contribute, then you should install via this method. Otherwise it is recommended that you install the package via Package Control, see above.
-
-Sublime stores packages in the following locations:
-
-	Nix: ~/.config/sublime-text-3/packages
-	Mac: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-	Win: %APPDATA%\Sublime Text 3\Packages
-
-### As a repository within the packages directory
-
-Open a Terminal/Console and run the following commands, replacing `PACKAGE_PATH` with the path corresponding to your OS above.
-
-	cd PACKAGE_PATH
-	git clone https://github.com/aponxi/sublime-better-coffeescript.git "Better CoffeeScript"
-
-### As a repository outside of the packages directory
-
-If you use Github for Mac/Windows which store repositories in a specific location, or if you just don't want a repository in your packages directory, then instead you can use a link.
-
-If you don't yet have the repository, then grab it via your GUI program or via the command line:
-
-	cd WHEREVER_YOU_WANT
-	git clone https://github.com/aponxi/sublime-better-coffeescript.git
-
-Once that is done, we will create the link:
-
-#### Windows:
-
-	cd PACKAGE_PATH
-	mklink /D "Better CoffeeScript" ABSOLUTE_PATH_TO_REPOSITORY
-
-#### Nix/Mac:
-
-	cd PACKAGE_PATH
-	ln -s ABSOLUTE_PATH_TO_REPOSITORY "Better CoffeeScript"
-
-#### A note on Package Control
-
-When Package Control tries to update your packages, if you have a repository in your packages directory then it will try to pull down and merge any changes. If you don't want this to happen and would rather handle everything yourself, then you can add the following to your settings (Preferences » Package Settings » Package Control » Settings - User):
-
-	"auto_upgrade_ignore": ["Better CoffeeScript"]
-
-# Updating
-
-If you are using Package Control, updating will be automatic and you don't have to worry about it.
-
-If using Source Control:
-
-	cd "PACKAGE_PATH/Better CoffeeScript"
-	git fetch origin
-	git merge origin/master
 
 # Commands/Shortcuts
 
@@ -365,7 +322,7 @@ The coffee-script binary probably is not installed. Either install coffee-script
 # Special Thanks
 
 
-Thanks to everyone who has contributed to this project. You guys rock! 
+Thanks to everyone who has contributed to this project. You guys rock!
 
 * [agibsonsw](https://github.com/agibsonsw) for his help in writing WatchMode
 
