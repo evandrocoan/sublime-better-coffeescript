@@ -107,6 +107,7 @@ I use this plug-in almost everyday! Therefore, whenever I am not developing I am
 search for **`BetterCoffeescript`** and press <kbd>Enter</kbd>
 
 See also:
+
 1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
 1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
